@@ -1,0 +1,71 @@
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.container3::before {
+    filter: brightness(150%);
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+     url("../../../assets/new-background.svg");
+    background-position: center;
+    background-size: contain;
+   
+  }
+
+.header {
+    display: grid;
+    margin: 0 auto;
+    font-family: "montserrat";
+    color: #fff;
+    font-size: 34px;
+   
+  }
+  .header h1 {
+    font-size: 41px;
+    text-align: center;
+  }
+  .header span {
+    color: #f44611;
+  }
+  .button_centrar  {
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: -20px;
+    padding: 10px 32px;  
+    
+  }
+
+  
+@media only screen and (max-width: 720px) {
+  .container3  {
+   height: auto;
+  }
+  .header h1{
+    font-size: 20px;
+  }
+  .picture {
+    display: block;
+    margin: 0 auto;
+  }
+  .picture img {  
+    width: 300px;
+  }
+
+ 
+}

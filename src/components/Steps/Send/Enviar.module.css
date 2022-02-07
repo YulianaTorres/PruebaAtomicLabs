@@ -1,0 +1,46 @@
+body,
+html {
+  font-family: "Montserrat";
+ 
+}
+
+.container::before {
+  filter: brightness(150%);
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url("../../assets/new-background.svg");
+  background-position: center;
+  background-size: 150%;
+  background-repeat: no-repeat;
+}
+.container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.container h1{
+    display: block;
+    margin: 0 auto;
+    margin-top: 280px;
+}
+
+h1{
+    font-family: 'montserrat';
+    font-size: 20px;
+    color: white;
+}

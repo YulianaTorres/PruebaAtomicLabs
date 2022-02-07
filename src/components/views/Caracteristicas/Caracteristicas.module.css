@@ -1,0 +1,153 @@
+.container {
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(180deg);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    filter: brightness(150%);
+  }
+  table {
+    background-color: white;
+    border-radius: 15px;
+    margin: 8%;
+    padding: 9%;
+    border-collapse: collapse;
+    margin-top: 43px;
+    font-family: 'montserrat';
+  }
+  .title{
+    font-size: 20px;
+  }
+  td {
+    width: 20%;
+    padding: 10px;
+    border-bottom: 0.5px solid #ccc;
+    border-right: 0.5px solid #ccc;
+    font-family: 'montserrat';
+  }
+  .th {
+    padding-left: 10px;
+  }
+  
+  table td:first-child {
+    width: 0.1px;
+    border: 0;
+  }
+  
+ 
+  td:nth-child(2) {
+    width: 50%;
+  }
+  td:nth-child(3) {
+    width: 25%;
+  }
+  td:nth-child(4) {
+    background: #E1E8EE;
+    width: 25%;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    
+  }
+ 
+  th:first-child {
+    border: 0;
+  }
+
+  th:nth-child(2) {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 0;
+  }
+  th:nth-child(3) {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 0;
+   border-right: 1px solid #ccc;
+   border-left: 1px solid #ccc;
+  }
+  th:nth-child(4) {
+    font-size: 40px;
+    background: #E1E8EE;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 0;
+    border-top-right-radius: 20px;
+   
+   
+  }
+  tr th:nth-child(1) {
+    text-align: left;
+ 
+  }
+  .th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  td:nth-child(3) {
+    text-align: center;
+  }
+  td:nth-child(4) {
+    text-align: center;
+  }
+
+  .blank {
+    border: 0;
+    width: 10%;
+  }
+  .background_blue {
+    height: 100vh;
+    width: 100%;
+    background-color: #2271b3;
+    content: "";
+    position: absolute;
+    
+  }
+  
+  .button_centrar  {
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 10px 32px;  
+    
+  }
+
+  @media only screen and (max-width: 1170px) {
+    .tabla {
+      font-size: 8px;
+    }
+    .title{
+      font-size: 10px;
+    }
+    th:nth-child(4){
+      font-size: 10px;
+    }
+    td:nth-child(4) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  

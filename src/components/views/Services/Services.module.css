@@ -1,0 +1,229 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  filter: brightness(150%);
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+   url("../../../assets/new-background.svg");
+  background-position: center;
+  background-size: contain;
+  }
+  
+.service {
+    font-family: "montserrat";
+    color: #fff;
+    text-align: center;
+    font-size: 34px;
+    margin-top: 50px;
+    font-weight: bold;
+    
+  }
+  .servicetext {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 16px;
+  }
+  .servicetext span {
+    color: #f44611;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    gap: 5px;
+  }
+
+
+  .box1{
+  height: 400px;
+  width: 300px;
+  display: grid;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  grid-column-start: 1;
+  place-self: center;
+  align-content: center;
+    
+  }
+
+  
+.box1 ul {
+  letter-spacing: 2px;
+}
+.box1 ul li {
+  margin-bottom: 3px;
+}
+.box1 img {
+  place-self: center;
+}
+.box1 h1 {
+  margin: 0;
+  color: #f44611;
+  place-self: center;
+  font-weight: 900;
+}
+.box1 ul li span {
+  font-weight: bold;
+}
+
+.box1guion {
+  width: 33%;
+  place-self: stretch;
+}
+
+.box2 {
+  font-family: "Montserrat";
+  background-color: #f44611;
+  color: #fff;
+  height: 500px;
+  width: 400px;
+  display: grid;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  grid-column-start: 2;
+  place-self: center;
+  z-index: 999;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.19), 0 20px 20px rgba(0, 0, 0, 0.23);
+  align-content: center;
+}
+.box2 ul {
+  font-size: 26px;
+}
+.box2list {
+  font-size: 24;
+}
+.box2 img {
+  place-self: center;
+}
+.box2 h1 {
+  margin: 0;
+  place-self: center;
+  font-weight: 900;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.19);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.box2 ul li span {
+  font-weight: bold;
+}
+.box2guion {
+  width: 30%;
+}
+
+
+.box3 {
+  height: 400px;
+  width: 300px;
+  display: grid;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  grid-column-start: 3;
+  place-self: center;
+  align-content: center;
+}
+.box3 ul {
+  letter-spacing: 2px;
+}
+
+.box3 ul li {
+  margin-bottom: 3px;
+}
+.box3 img {
+  place-self: center;
+}
+.box3guion {
+  width: 33%;
+  place-self: stretch;
+}
+.box3 h1 {
+  margin: 0;
+  color: #f44611;
+  place-self: center;
+  font-weight: 900;
+}
+.box3 ul li span {
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .container {
+    height: auto;
+
+  }
+  .servicetext {
+    font-size: 20px;
+    margin-top: 40px;
+
+  }
+  .box {
+    display: block;
+    grid-template-columns: 100%;
+  }
+  .box1{
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .box1 img{
+    display: block;
+    margin: 0 auto;
+  }
+  .box1 h1{
+    text-align: center;
+  }
+
+  .box2{
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 85%;
+  }
+  .box2 img{
+    display: block;
+    margin: 0 auto;
+  }
+  .box2 h1{
+    text-align: center;
+  }
+ 
+  .box3{
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .box3 img{
+    display: block;
+    margin: 0 auto;
+  }
+  .box3 h1{
+    text-align: center;
+  }
+ 
+ 
+  
+ 
+}

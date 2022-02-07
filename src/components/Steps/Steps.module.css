@@ -1,0 +1,45 @@
+.steps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-bottom: 40px;
+    min-width: 1209px;
+  }
+  
+  .step {
+    text-align: center;
+    width: 180px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  
+  .stepimage {
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 1070px) {
+    .steps {
+      width: 100px;
+      font-size: 7px;
+    }
+    .stepimage {
+      margin: 0;
+      width: 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 880px) {
+    .steps{
+margin-left: 15px;
+      min-width: 330px;
+    }
+    .step {
+      width: 30px;
+      font-size: 9px;
+    }
+    .stepimage{
+      margin: 0;
+      width: 10px;
+    }
+  }
